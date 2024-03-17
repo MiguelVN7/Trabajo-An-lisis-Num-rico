@@ -32,7 +32,7 @@ def Example_function(x):
     return x**2 - 4
 
 #! Parametros de entrada
-x0 = 3        #* X inicial
+x0 = 2         #* X inicial
 h = 0.1          #* paso por iteracion
 Nmax = 100       #* numero maximo de iteraciones
 
