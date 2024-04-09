@@ -16,14 +16,14 @@ def secante (x0, x1, tol, iter):
             return None
         x2 = x1 - fx1 * (x1 - x0) / (fx1 - fx0)
 
-        # Dibuja la función y la secante
+        # Grafica
         plt.figure()
         x = np.linspace(min(x0, x1) - 1, max(x0, x1) + 1, 500)
         plt.plot(x, f(x), label='f(x)', color='red')
-        plt.scatter([x0, x1], [fx0, fx1], color='blue')  # Puntos x_0 y x_1
-        plt.scatter(x2, 0, color='green')  # Raíz aproximada x_2
+        plt.scatter([x0, x1], [fx0, fx1], color='blue')  
+        plt.scatter(x2, 0, color='green')  
 
-        # Línea secante
+        
         plt.plot([x0, x1], [fx0, fx1], 'blue', label='Secante')
 
         plt.title(f"Iteración {n + 1}")
