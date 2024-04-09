@@ -28,7 +28,7 @@ def main():
         print("No se encontro la raiz")
 
     # GRAFICA
-    xi = np.linspace(0, 2, 100)  # Cambiar el rango según tus necesidades
+    xi = np.linspace(0, 2, 100)  # Cambiar el rango 
     fi = f(xi)
     gi = df(xi)
 
