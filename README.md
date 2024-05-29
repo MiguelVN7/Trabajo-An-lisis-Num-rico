@@ -1,2 +1,7 @@
-# Trabajo Analisis Numerico
-Práctica tradicional de la materia Análisis Numérico, realizado por: Sara Domínguez, Simón Gaviria, Vlad Shatunov y Miguel Villegas
+# Manual de Usuario de los Métodos
+## Prerrequisitos
+
+## Capítulo 1: Métodos de Búsqueda de Raíces
+
+### 1. Búsquedas Incrementales
+
