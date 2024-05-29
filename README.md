@@ -1,4 +1,5 @@
 # Manual de Usuario de los Métodos
+
 ## Prerrequisitos
 
 ## Introducción
@@ -33,6 +34,9 @@ Como se podrá apreciar a continuación, el manual, al igual que el programa, se
 #### c. Salida
 - Entrega la raíz, un rango donde está la raíz, o un mensaje indicando que no existe una raíz.
 
+#### d. Ejemplo
+- **Ejemplo de Uso**: hallarRaiz("x**2 - 4", 0, 0.1, 100)
+
 ### 2. Bisección y Regla Falsa
 
 #### a. Entradas
@@ -48,6 +52,10 @@ Como se podrá apreciar a continuación, el manual, al igual que el programa, se
 
 #### c. Salida
 - Valor de la raíz exacta, valor de la raíz con un margen de error, o un mensaje informando que el intervalo es incorrecto.
+
+#### d. Ejemplo
+- **Ejemplo de Uso**: hallarRaizBiseccion(0, 5, "x**2 - 4", 0.01)
+- **Ejemplo de Uso**: hallarRaizReglaFalsa(0, 5, "x**2 - 4", 0.01)
 
 ### 3. Newton
 
@@ -67,6 +75,9 @@ Como se podrá apreciar a continuación, el manual, al igual que el programa, se
 #### c. Salida
 - Valor de la raíz con un margen de error, o un mensaje indicando que la derivada es cero, o que se superó la cantidad de iteraciones sin encontrar una raíz.
 
+#### d. Ejemplo
+- **Ejemplo de Uso**: hallarRaizNewton("x**2 - 4", "2*x", 1, 0.01, 100)
+
 ### 4. Punto Fijo
 
 #### a. Entradas
@@ -83,6 +94,9 @@ Como se podrá apreciar a continuación, el manual, al igual que el programa, se
 
 #### c. Salida
 - Valor de la raíz con una tolerancia especificada, o un mensaje indicando que no se encuentra una raíz debido a que el error es mayor que la tolerancia.
+
+#### d. Ejemplo
+- **Ejemplo de Uso**: hallarRaizPuntoFijo("x**2 - 4", 1, 0.01, 100)
 
 ### 5. Secante
 
@@ -101,6 +115,9 @@ Como se podrá apreciar a continuación, el manual, al igual que el programa, se
 
 #### c. Salida
 - Valor de la raíz con un margen de error, o un mensaje indicando que no se encontró raíz.
+
+#### d. Ejemplo
+- **Ejemplo de Uso**: hallarRaizSecante("x**2 - 4", 1, 2, 0.01, 100)
 
 ### 6. Raíces Múltiples
 
@@ -121,6 +138,9 @@ Como se podrá apreciar a continuación, el manual, al igual que el programa, se
 #### c. Salida
 - Valor de la raíz con un margen de error especificado en las entradas.
 
+#### d. Ejemplo
+- **Ejemplo de Uso**: hallarRaizMultiples("x**3 - 6*x**2 + 11*x - 6", "3*x**2 - 12*x + 11", "6*x - 12", 1, 0.01, 100)
+
 
 ## Capítulo 2: Métodos de Eliminación
 
@@ -138,6 +158,9 @@ Como se podrá apreciar a continuación, el manual, al igual que el programa, se
 #### c. Salida
 - Solución del sistema de ecuaciones.
 
+#### d. Ejemplo
+- **Ejemplo de Uso**: eliminacionGaussianaSimple("2,1,-1,8; -3,-1,2,-11; -2,1,2,-3", 3)
+
 ### 2. Eliminación Gaussiana con Pivoteo Parcial
 
 #### a. Entradas
@@ -151,6 +174,9 @@ Como se podrá apreciar a continuación, el manual, al igual que el programa, se
 
 #### c. Salida
 - Solución del sistema de ecuaciones.
+
+#### d. Ejemplo
+- **Ejemplo de Uso**: eliminacionGaussianaPivoteoParcial("2,1,-1,8; -3,-1,2,-11; -2,1,2,-3", 3)
 
 ### 3. Eliminación Gaussiana con Pivoteo Total
 
@@ -166,6 +192,9 @@ Como se podrá apreciar a continuación, el manual, al igual que el programa, se
 #### c. Salida
 - Solución del sistema de ecuaciones.
 
+#### d. Ejemplo
+- **Ejemplo de Uso**: eliminacionGaussianaPivoteoTotal("2,1,-1,8; -3,-1,2,-11; -2,1,2,-3", 3)
+
 ### 4. Factorización LU
 
 #### a. Entradas
@@ -178,6 +207,9 @@ Como se podrá apreciar a continuación, el manual, al igual que el programa, se
 
 #### c. Salida
 - Solución del sistema de ecuaciones.
+
+#### d. Ejemplo
+- **Ejemplo de Uso**: factorizacionLU("4,3;6,3", "5,9")
 
 ### 5. Método de Doolittle
 
@@ -194,6 +226,9 @@ Como se podrá apreciar a continuación, el manual, al igual que el programa, se
 #### c. Salida
 - Solución del sistema de ecuaciones.
 
+#### d. Ejemplo
+- **Ejemplo de Uso**: metodoDoolittle("4,3;6,3", "5,9", 2)
+
 ### 6. Método de Crout
 
 #### a. Entradas
@@ -209,6 +244,9 @@ Como se podrá apreciar a continuación, el manual, al igual que el programa, se
 #### c. Salida
 - Solución del sistema de ecuaciones.
 
+#### d. Ejemplo
+- **Ejemplo de Uso**: metodoCrout("4,3;6,3", "5,9", 2)
+
 ### 7. Método de Cholesky
 
 #### a. Entradas
@@ -223,6 +261,9 @@ Como se podrá apreciar a continuación, el manual, al igual que el programa, se
 
 #### c. Salida
 - Solución del sistema de ecuaciones.
+
+#### d. Ejemplo
+- **Ejemplo de Uso**: metodoCholesky("4,3;6,3", "5,9", 2)
 
 ### 8. Método de Jacobi
 
@@ -242,6 +283,9 @@ Como se podrá apreciar a continuación, el manual, al igual que el programa, se
 #### c. Salida
 - Solución del sistema de forma iterativa.
 
+#### d. Ejemplo
+- **Ejemplo de Uso**: metodoJacobi("4,3;6,3", "5,9", "0,0", 0.01, 100)
+
 ### 9. Método de Gauss-Seidel
 
 #### a. Entradas
@@ -260,3 +304,5 @@ Como se podrá apreciar a continuación, el manual, al igual que el programa, se
 #### c. Salida
 - Solución del sistema de forma iterativa.
 
+#### d. Ejemplo
+- **Ejemplo de Uso**: metodoGaussSeidel("4,3;6,3", "5,9", "0,0", 0.01, 100)
